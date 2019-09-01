@@ -1,0 +1,106 @@
+{
+    "idiomas": ["sp", "en", "fr"],
+    "default": "sp",
+    "datos": {
+      "titulo": {
+        "sp": "T E T R I S",
+        "en": "T E T R I S",
+        "fr": "T E T R I S"
+      },
+      "github": {
+        "sp": "GitHub",
+        "en": "GitHub",
+        "fr": "GitHub"
+      },
+      "tituloLiga": {
+        "sp": "Ver código fuente",
+        "en": "View data source",
+        "fr": "Afficher la source des données"
+      },
+      "codigoQR":{
+        "sp": "Código QR",
+        "en": "QR code",
+        "fr": "QR code"
+      },
+      "tituloAlCentro": {
+        "sp": "TETRIS",
+        "en": "TETRIS",
+        "fr": "TETRIS"
+      },
+      "punto": {
+        "sp": "Marcador",
+        "en": "Points",
+        "fr": "Score"
+      },
+      "marcadorRecord": {
+        "sp": "Max",
+        "en": "Max",
+        "fr": "Max"
+      },
+      "ultimaRonda": {
+        "sp": "Última Ronda",
+        "en": "Last Round",
+        "fr": "Dernier Tour"
+      },
+      "limpiar": {
+        "sp": "Despejadas",
+        "en": "Cleans",
+        "fr": "Lignes"
+      },
+      "nivel": {
+        "sp": "Nivel",
+        "en": "Level",
+        "fr": "Difficulté"
+      },
+      "lineaInicio": {
+        "sp": "Linea Inicio",
+        "en": "Start Line",
+        "fr": "Ligne Départ"
+      },
+      "siguiente": {
+        "sp": "Siguiente",
+        "en": "Next",
+        "fr": "Prochain"
+      },
+      "pausar": {
+        "sp": "Pausar",
+        "en": "Pause",
+        "fr": "Pause"
+      },
+      "sonido": {
+        "sp": "Sonido",
+        "en": "Sound",
+        "fr": "Sonore"
+      },
+      "resetear": {
+        "sp": "Resetear",
+        "en": "Reset",
+        "fr": "Réinitialiser"
+      },
+      "rotar": {
+        "sp": "Rotar",
+        "en": "Rotation",
+        "fr": "Rotation"
+      },
+      "izq": {
+        "sp": "Izq",
+        "en": "Left",
+        "fr": "Gauche"
+      },
+      "der": {
+        "sp": "Der",
+        "en": "Right",
+        "fr": "Droite"
+      },
+      "abajo": {
+        "sp": "Bajar",
+        "en": "Down",
+        "fr": "Bas"
+      },
+      "soltar": {
+        "sp": "Soltar",
+        "en": "Drop",
+        "fr": "Tomber"
+      }
+    }
+  }

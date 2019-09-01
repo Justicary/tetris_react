@@ -1,17 +1,26 @@
 {
   "name": "tetris",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
+    "immutable": "^4.0.0-rc.12",
+    "prop-types": "^15.7.2",
+    "qrcode": "^1.4.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1"
+    "react-redux": "^7.1.0",
+    "react-scripts": "^3.1.1",
+    "redux": "^4.0.4",
+    "redux-immutable": "^4.0.0",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "inicia": "webpack-dev-server --progress"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +36,37 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-react-transform": "^3.0.0",
+    "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.2.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-loader": "^3.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "json-loader": "^0.5.7",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "open-browser-webpack-plugin": "^0.0.5",
+    "postcss": "^7.0.17",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
+    "react-transform-hmr": "^1.0.4",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.1.0",
+    "webpack": "4.39.1",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "3.2.1"
   }
 }
