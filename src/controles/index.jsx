@@ -1,7 +1,7 @@
 import almacen from '../almacen';
 import acciones from './acciones';
 
-console.info(`\u2713 Controles activados...`);
+console.info(`\u2713 Controles->index.js - Activados...`);
 const teclasPermitidas = { // JSEventKeyCode: 'decripción tecla'
     37: 'izquierda',
     38: 'rotar',

@@ -1,6 +1,33 @@
+/* Configuracion LESS en webpack.config.js
+              {
+              test: /\.less$/,
+              use: [
+                {
+                  loader: "style-loader"
+                },
+                {
+                  loader: "css-loader",
+                  options: {
+                    sourceMap: true,
+                    modules: true,
+                  }
+                },
+                {
+                  loader: "less-loader"
+                }
+              ]
+            },
+
+    plugins: [
+      new CopyWebpackPlugin([
+        { from: './src/resource/music/music.mp3' },
+        { from: './src/resource/css/loader.css' },
+      ]),            
+    ]
+ */
 import {List} from 'immutable';
 import i18n from '../i18n.json';
-console.info(`\u2713 Cargando constantes...`);
+console.info(`\u2713 Constantes.js - Cargadas...`);
 export const formaFigura = {
   I: [ [1, 1, 1, 1], ], // ■ ■ ■ ■
 
@@ -50,7 +77,7 @@ export const lineasTotales = 20;
 export const ultimoRegistro = (() => {
   let datos = localStorage.getItem(llaveAlmacenamiento);
   if (!datos) { 
-    console.info('\u274c No existe un último registro...', datos);
+    console.info('\u274c Constantes.js -> No hay un último registro...', datos);
     return false; 
   };
   try { // Existe información, aplico decodificación inversa.

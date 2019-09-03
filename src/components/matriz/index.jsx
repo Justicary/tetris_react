@@ -20,7 +20,7 @@ export default class Matriz extends Component {
         super();
         this.state = {
             lineasDespejadas: false,
-            animarColor: 2,
+            animarColor: 2, //
             perdiste: false,
             estadoPerdiste: null,
         };
@@ -95,9 +95,9 @@ export default class Matriz extends Component {
     animarDespeje() {
         const animar = (callback) => {
             t( () => { // Temporizadores anidados...
-                this.setState({ animarColor: 0 });
+                this.setState({ animarColor: 0 }); // Negro
                 t( () => {
-                    this.setState({ animarColor: 2 });
+                    this.setState({ animarColor: 2 }); // Rojo
                     if(typeof callback === 'function') {
                         callback();
                     };
@@ -128,7 +128,7 @@ export default class Matriz extends Component {
             };
             this.setState({ estadoPerdiste });
         };
-        for(let i=0; i<=40; i++) {
+        for(let i=0; i <= 40; i++) {
             t(exLinea.bind(null, i), 40 * (i + 1));
         };
     };

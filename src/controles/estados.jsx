@@ -6,7 +6,7 @@ import  { velocidades, lineaEnBlanco, matrizVacia, puntosPorDespeje, lineasTotal
 import { musica } from '../unidades/musica';
 const { quiero, seDespeja, perdiste } = unidad;
 
-const getMatrizInicial = (lineasIniciales) => { // Método que generara la matríz inicial del juego.
+const getMatrizInicial = async (lineasIniciales) => { // Método que generara la matríz inicial del juego.
     const getLinea = (min, max) => { // Método que devuelve una línea con un número entre min ~ max, (incluido el límite)
         const contador = parseInt((((max - min) + 1) * Math.random()) + min, 10);
         const linea = [];
@@ -146,11 +146,12 @@ const estados = {
         estados.despacharPuntos(0);
         almacen.dispatch(acciones.velPartida(estado.get('velocidadInicial')));
         const lineasIniciales = estado.get('lineasIniciales');
-        const matrizInicial = getMatrizInicial(lineasIniciales);
-        almacen.dispatch(acciones.matriz(matrizInicial));
-        almacen.dispatch(acciones.moverBloque({ tipo: estado.get('siguiente') }));
-        almacen.dispatch(acciones.sigBloque());
-        estados.auto();
+        getMatrizInicial(lineasIniciales).then((matrizInicial)=> {
+            almacen.dispatch(acciones.matriz(matrizInicial));
+            almacen.dispatch(acciones.moverBloque({ tipo: estado.get('siguiente') }));
+            almacen.dispatch(acciones.sigBloque());
+            estados.auto();
+        });
     },
     reiniciar: () => { // Fin del juego, animación de activación.
         console.info('ESTADOS-REINICIANDO...');

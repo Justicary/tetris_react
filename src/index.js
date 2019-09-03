@@ -9,7 +9,7 @@ import './unidades/constantes';
 
 const { guardarAlmacenLocalmente } = unidad;
 
-console.info(`\u2713 Iniciando Aplicación...`);
+console.info(`\u2713 src/index.js -> Iniciando Aplicación...`);
 guardarAlmacenLocalmente(almacen);
 
 render (

@@ -13,7 +13,7 @@ export const musica = {};
 // Método sin nombre... será un método default??
 (() => {
     if(!tenemosWebAudioAPI.datos) return;
-    const url = __dirname + '/src/resources/music/musica.mp3';
+    const url = __dirname + '/musica.mp3';
     const contexto = new AudioContext();
     const requiero = new XMLHttpRequest();
     requiero.open('GET', url, true);
